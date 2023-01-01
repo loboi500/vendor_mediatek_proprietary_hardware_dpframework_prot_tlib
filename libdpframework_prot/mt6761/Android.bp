@@ -1,0 +1,27 @@
+mtk_cc_prebuilt_library {
+    arch: {
+        arm: {
+            srcs: [
+                "arm/libdpframework_prot.a",
+            ],
+        },
+        arm64: {
+            srcs: [
+                "arm64/libdpframework_prot.a",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    export_include_dirs: [
+        "include/mt6761",
+        "include/common",
+    ],
+    mtk_brm_platform: "mt6761",
+    mtk_product_line: "tablet",
+    mtk_src_path: "vendor/mediatek/proprietary/hardware/dpframework_prot",
+    mtk_type: "cc_prebuilt_library_static",
+    name: "libdpframework_prot",
+    owner: "mtk",
+    proprietary: true,
+}
+
